@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Busca Cep</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="custom.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+</head>
+<body background="imgs/0936a65e8a3d9ab7a272b47c5f73a806.jpg">
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                <img alt="Brand" src="imgs/logo.png" width="40">
+            </a>
+        </div>
+        <p class="navbar-text">Busca CEP usando PHP e XML</p>
+        <p class="navbar-text pull-right">Créditos para <a class="link" href="https://viacep.com.br/">https://viacep.com.br/</a></p>
+    </div>
+</nav>
+<div id="body"></div>
+<div id="div_form_cep">
+<form id="form_cep" class="form-horizontal" method="post" action="">
+    <fieldset>
+        <legend>Busca CEP</legend>
+        <!-- Prepended text-->
+        <div class="form-group">
+            <label class="col-md-5 control-label" for="txtCep">Cep:</label>
+            <div class="col-md-3">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+                    <input id="txtCep" name="txtCep" class="form-control" placeholder="" type="text" required="" autofocus>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Prepended text-->
+        <div class="form-group">
+            <label class="col-md-5 control-label" for="txtLogradouro">Logradouro:</label>
+            <div class="col-md-3">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
+                    <input id="txtLogradouro" name="txtLogradouro" class="form-control" placeholder="" type="text">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Prepended text-->
+        <div class="form-group">
+            <label class="col-md-5 control-label" for="txtNumero">Número:</label>
+            <div class="col-md-3">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
+                    <input id="txtNumero" name="txtNumero" class="form-control" placeholder="" type="text">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Prepended text-->
+        <div class="form-group">
+            <label class="col-md-5 control-label" for="txtBairro">Bairro:</label>
+            <div class="col-md-3">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
+                    <input id="txtBairro" name="txtBairro" class="form-control" placeholder="" type="text">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Prepended text-->
+        <div class="form-group">
+            <label class="col-md-5 control-label" for="txtCidade">Cidade:</label>
+            <div class="col-md-3">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
+                    <input id="txtCidade" name="txtCidade" class="form-control" placeholder="" type="text">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Prepended text-->
+        <div class="form-group">
+            <label class="col-md-5 control-label" for="txtEstado">Estado:</label>
+            <div class="col-md-3">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker"></i></span>
+                    <input id="txtEstado" name="txtEstado" class="form-control" placeholder="" type="text">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Button (Double) -->
+        <div class="form-group">
+            <label class="col-md-5 control-label" for="button1id"></label>
+            <div class="col-md-6">
+                <button id="btnSalvar" name="btnSalvar" class="btn btn-success"><i class="glyphicon glyphicon-ok"></i> Salvar</button>
+                <button id="btnCancelar" name="btnCancelar" class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i> Cancelar</button>
+            </div>
+        </div>
+
+    </fieldset>
+</form>
+</div>
+<div class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+        <p class="navbar-text pull-left">© 2018 - Developer "Wagner Fernando Momesso"
+            <a href="https://wagnermomesso.com.br" target="_blank" >Visit my site</a>
+        </p>
+
+        <a href="http://youtu.be/wmomesso" class="navbar-btn btn-danger btn pull-right">
+            <span class="glyphicon glyphicon-star"></span>  Subscribe on YouTube</a>
+        <p class="navbar-text pull-right">Agradecimentos a
+            <a href="https://viacep.com.br/">Via Cep</a> por disponibilizar a api
+        </p>
+    </div>
+
+
+</div>
+<script src="busca_cep.js"></script>
+</body>
+</html>
