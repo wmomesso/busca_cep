@@ -4,7 +4,7 @@
 [Via CEP](https://viacep.com.br)
 
 API ViaCep autocomplete inputs Addresses from Brazil using code postal (CEP)
-## Languages ande dependencies
+## Languages and dependencies
 - PHP (using PHP V7.2)
 - HTML5
 - XML
